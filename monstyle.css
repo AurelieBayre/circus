@@ -1,0 +1,302 @@
+/* --------- Global style ---------- */
+html, body{
+	height: 100%;
+    overflow: auto;
+} 
+html {
+   font-size: 14px;
+}
+
+body {
+    background-color: #000000; 
+	position: relative;
+}
+
+section {
+    margin-top: 0%;
+}
+
+footer {
+		background-color: #000000;
+		font-size: 0.8em;
+    text-align: center;
+		margin-bottom: 0px;
+}
+
+footer p{
+    color: rgb(192, 208, 223);
+		margin-bottom: 0px;
+}
+footer a {
+    color: rgb(216, 195, 233);
+}
+
+footer a:hover {
+    color: rgb(245, 205, 225);
+}
+
+nav {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+}
+h1 {
+	 font-family: 'Amatic SC', cursive;
+    text-align: center;
+	 	color: #ffeecc;
+    /*text-shadow: 2px 2px 2px #f1e4be;*/
+    /*text-shadow: 2px 2px 2px #9cb0c9;*/
+    font-size: 2.5em;
+		margin-top: 5%;
+   
+}
+h2 {
+    color: #2e5d94;
+    text-shadow: 2px 2px 2px #3b6397;
+    margin-bottom: 2%;
+    
+}
+h3 {
+    color: #2e5d94;
+}
+section h2 {
+    margin-left: 2%;
+}
+
+nav {
+    text-align: center;
+    background-color: #000000;
+}
+nav li {
+	
+    font-size: 1.5em;
+    padding-right: 15px;
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+p {
+    font-family: 'Dosis', sans-serif; 
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+}
+ul li {
+     display: inline;
+ }
+
+form {
+    
+    padding-bottom: 2%;
+}
+
+form label {
+    font-family: 'Dosis', sans-serif;
+    font-size: small;
+    color: white;
+}
+hr {
+	width: 50%;
+  border-top: 1px double #ffeecc !important;
+  margin-bottom:30px !important; 
+  margin-top:0px !important;
+  text-align: center;
+}
+
+th, td {
+	text-align: center;
+}
+
+/* ---------- Classes ---------- */
+
+/*
+.main {
+    background-image: url("https://aurelie-bayre.com/wildcircuspics/bubblybg.jpg");
+    background-color: #ffeecc;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+*/
+
+.aboutSelectors {
+	font-size: 1.2em;
+	text-align: center;
+	cursor: pointer;
+	margin-bottom: 0;
+}
+
+.aboutSelectors span:hover {
+	text-decoration: underline #ffeecc;
+}
+
+.animateAbout {
+	
+	text-align: center;
+}
+
+.caption {
+	font-size: 1.5em;
+}
+
+.title {
+		font-family: 'Amatic SC', cursive;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.titledark {
+    color: #2e5d94;
+    text-shadow: 2px 2px 2px #3b6397;
+    margin-bottom: 1%;
+}
+.titlelight {
+    color: #ffeecc;
+    text-shadow: 2px 2px 2px #f1e4be;
+    margin-bottom: 1%;
+}
+.lateralHeading {
+    background:;
+    font-size: small;
+}
+.lead {
+    font-family: 'Courgette', cursive;
+}
+.jumbotron { 
+    /*margin: 0 0 0 0;*/
+		background-color: #000000;
+    margin-bottom: 0px !important; /* had to override bootstrap default magin bottom for jumbotron. (it was fine on local files, but a white margin was displayed on codepen*/
+		padding: 0px;
+}
+
+.parallax {
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxSection {
+    background-image: url("https://aurelie-bayre.com/wildcircuspics/wildcircus.jpg");
+}
+
+.parallaxSection2 {
+    background-image: url("https://aurelie-bayre.com/wildcircuspics/bubblybg.jpg");
+    color: rgb(36, 92, 145);
+}
+
+.parallaxSection3 {
+    background-image: url("https://aurelie-bayre.com/wildcircuspics/bambi.jpg");
+    color: #ffeecc;
+	position : relative;
+}
+.parallaxSection4 {
+    background-image: url("https://aurelie-bayre.com/wildcircuspics/parade.jpg");
+}
+
+.perfImages {
+width: 90%;
+max-width: 70%;
+border-radius: 12px;
+margin-left: 2%;
+}
+
+
+.slogan2 {
+    display: block;
+    font-family: 'Courgette', cursive;
+    font-size: 1.1em;
+		text-align: center;
+}
+
+.table {
+    color: #2e5d94;
+}
+.form-text {
+    color: rgb(212, 212, 212);
+		
+}
+
+
+/* ---------- ID ---------- */
+#about {
+	position: relative;
+}
+#aboutContainer { /* not really what I want!! */
+	width: 70%;
+	height: 60%;
+}
+
+#aboutConclusion {
+	position: absolute;
+	margin-top: 20%;
+}  
+
+#aboutIntro {
+	text-align: center;
+	font-style: italic;
+}
+
+#announcement {
+	font-size: 2em;
+	text-align: center;
+}
+
+#slogan {
+    margin-top: 0;
+    padding-bottom: 50%;
+    text-align: center;
+    color: #ffeecc;
+}
+#performances {
+    display: table;
+    margin-top: 1%;
+}
+
+#performances li {
+    display: table-cell;
+    width: 30%;
+    padding: 0 1% 0 1%;  
+}
+
+
+#about {
+    padding:0  10% 0 10%;
+}
+
+
+#contactbtn {
+    margin-left: 20%;
+    box-shadow: 2px 4px 0 0 #3b6397;
+}
+#contactbtn:active, #contactbtn.active {
+	background: #33a6cc;
+	box-shadow: none;
+	margin-bottom: -4px;
+	margin-top: 4px;
+}
+
+/*   ------Responsive font-sizes----- */
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
+}

@@ -1,32 +1,325 @@
-/* --------- Global style ---------- */
+/*========== General ==========*/
+
 html, body{
-	height: 100%;
+	  height: 100%;
     overflow: auto;
 } 
 html {
-   font-size: 14px;
+    font-size: 16px;
 }
 
 body {
     background-color: #000000; 
-	position: relative;
 }
+
+h1 {
+    color: #ffeecc;
+    text-align: center;
+		font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+    margin-top: 5%; 
+}
+
+h2 {
+    color: #2e5d94;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
+    margin-bottom: 2%;
+    text-shadow: 2px 2px 2px #3b6397; 
+}
+
+h3 {
+    color: #2e5d94;
+    font-family: 'Amatic SC', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Dosis', sans-serif; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;   
+}
+
+ul li {
+    display: inline;
+}
+
+hr {
+    /* I have to override Bootstrap built-props for this... */
+    border-top: 1px double #ffeecc !important;
+    margin-top:0px !important;
+    margin-bottom:30px !important; 
+    text-align: center;
+    width: 50%;
+}
+
+
+/*========== Header ==========*/
+/*
+.lead {
+    font-family: 'Courgette', cursive;
+}*/
+
+.mainTitle {
+		font-size: 4em;
+}
+
+#headTitle {
+    margin-top: 7%
+}
+
+#slogan {
+		color: #ffeecc;
+	 	font-family: 'Courgette', cursive;
+		font-size: 2em;
+    margin-top: 0;
+    padding-bottom: 50%;
+    text-align: center;
+}
+
+/*========== Navigation ==========*/
+
+nav {
+    background-color: #000000;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;   
+}
+
+nav li {	
+    font-size: 1.5em;
+    padding-right: 15px;
+}
+
+/*========== Section ==========*/
+/*
+O. general section settings
+1. Performances
+2. About Us
+3. Prices
+4. Contact Us.
+*/
+
+/*----- 0. General Section settings*/
 
 section {
     margin-top: 0%;
 }
 
-footer {
-		background-color: #000000;
-		font-size: 0.8em;
+section .title {
+		font-size: 3em;
+}
+
+.jumbotron { 
+    /*margin: 0 0 0 0;*/
+    background-color: #000000;
+    margin-bottom: 0px !important; /* had to override bootstrap default magin bottom for jumbotron. (it was fine on local files, but a white margin was displayed on codepen*/
+    padding: 0px;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-color: rgb(0, 0, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.parallaxSection {
+    background-image: url("https://aurelie-bayre.com/wildcircuspics/wildcircus.jpg");
+}
+
+.title {
+    font-family: 'Amatic SC', cursive;
     text-align: center;
-		margin-bottom: 0px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.titledark {
+    color: #2e5d94;
+    text-shadow: 2px 2px 2px #3b6397;
+}
+
+.titlelight {
+    color: #ffeecc;
+    text-shadow: 2px 2px 2px #f1e4be;
+}
+
+
+/*--- 1. Performances ---*/
+
+.caption {
+		margin: 2% 5% 2% 2%;
+		font-size: 2em;
+		text-align: justify;
+		text-align-last: left;
+}
+
+.parallaxSection2 {    
+    background-image: url("https://aurelie-bayre.com/wildcircuspics/bubblybg.jpg");
+    color: rgb(36, 92, 145);   
+}
+
+.perfImages {
+    border-radius: 12px;
+    margin-left: 3%;
+    width: 90%;
+    max-width: 70%;
+}
+
+#performances {
+    display: table;
+    margin: 8% 3% 5% 3%;
+}
+
+#performances li {
+    display: table-cell;
+    margin: 0 1% 0 1%;  
+    width: 30%;   
+}
+
+#performances li h3 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/*------2. About Us ------*/
+
+
+#aboutIntro {
+		font-size: 1.333em;
+		font-style: italic;
+		text-align: center;	
+}
+
+.aboutSelectors {
+		font-size: x-large;
+		text-align: center;
+		cursor: pointer;
+		margin-bottom: 0;
+}
+
+.aboutSelectors span:hover {
+		text-decoration: underline #ffeecc;
+}
+
+.aboutSlogan {
+    display: block;
+    font-family: 'Courgette', cursive;
+    font-size: 1.8em;
+    text-align: center;	
+		margin: 5% 5% 3% 5%;
+}
+
+.animateAbout {	
+		font-size: 1.5em;
+		text-align: center;
+		margin: 5% 5% 10% 5%; 
+}
+
+.parallaxSection3 {
+		background: 
+			linear-gradient(rgba(141,153,174,0.4),rgba(141,153,174,0.4)), 
+			url("https://aurelie-bayre.com/wildcircuspics/bambi.jpg") no-repeat fixed;
+		background-position: center;
+		background-size: cover;
+    color: #ffeecc;
+}
+
+
+/*--- 3. Prices ---*/
+
+#announcement {
+		font-size: 1.789em;
+		text-align: center;
+}
+
+.table {
+    color: #2e5d94;
+    margin-top: 10%
+}
+
+td {
+		text-align: center;
+}
+
+#prices th {
+		text-align: center;
+}
+
+
+/*--- 4. Contact Us ---*/
+
+
+
+form {
+		margin-top: 4%;
+		padding: 3%;
+}
+
+form label {
+		color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: small;
+    
+}
+
+#contactForm {
+		background-color: #343538;
+		border-radius: 7px;
+}
+.form-text {
+    color: rgb(212, 212, 212);
+		
+}
+#contactbtn {
+    box-shadow: 2px 4px 0 0 #3b6397;
+    
+}
+
+#contactbtn:active {
+		background: #33a6cc;
+		box-shadow: none;
+		margin-bottom: -4px;
+		margin-top: 4px;
+}
+
+.parallaxSection4 {
+    background-image: url("https://aurelie-bayre.com/wildcircuspics/parade.jpg");
+}
+
+.translucidBg { 	
+		background: rgb(0, 0, 0);
+		background: rgba(0, 0, 0, 0.3);
+		/* IE 7 and even older... duh. */
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#77000000, endColorstr=#77000000);
+		/* For IE 8*/
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#77000000, endColorstr=#77000000)";
+
+		border-radius: 7px;
+}
+/*-------------- Footer --------------*/
+
+footer {
+    background-color: #000000;
+    font-size: 0.8em;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
 footer p{
     color: rgb(192, 208, 223);
-		margin-bottom: 0px;
+    margin-bottom: 0px;
 }
+
 footer a {
     color: rgb(216, 195, 233);
 }
@@ -35,268 +328,39 @@ footer a:hover {
     color: rgb(245, 205, 225);
 }
 
-nav {
-    font-family: 'Amatic SC', cursive;
-    text-align: center;
+/*-------------- Responsive rules --------------*/
+
+@media (max-width: 420px) {
+	html {
+		font-size: 10px;
+	}
+	.caption {
+		font-size: 1.4em;
+	}
 }
-h1 {
-	 font-family: 'Amatic SC', cursive;
-    text-align: center;
-	 	color: #ffeecc;
-    /*text-shadow: 2px 2px 2px #f1e4be;*/
-    /*text-shadow: 2px 2px 2px #9cb0c9;*/
-    font-size: 2.5em;
+
+@media (min-width: 800px) and (max-width: 1024px) {
+	html {
+		font-size: 14px;
+	}
+	.caption {
+		font-size: 1em;
+	}
+	
+	#performances {
+		margin: 3% 3% 5% 3%;
+	}
+	
+	.table {
 		margin-top: 5%;
-   
-}
-h2 {
-    color: #2e5d94;
-    text-shadow: 2px 2px 2px #3b6397;
-    margin-bottom: 2%;
-    
-}
-h3 {
-    color: #2e5d94;
-}
-section h2 {
-    margin-left: 2%;
+	}
 }
 
-nav {
-    text-align: center;
-    background-color: #000000;
-}
-nav li {
-	
-    font-size: 1.5em;
-    padding-right: 15px;
-    margin-left: 30px;
-}
-
-a {
-    text-decoration: none;
-}
-p {
-    font-family: 'Dosis', sans-serif; 
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-   
-}
-ul li {
-     display: inline;
- }
-
-form {
-    
-    padding-bottom: 2%;
-}
-
-form label {
-    font-family: 'Dosis', sans-serif;
-    font-size: small;
-    color: white;
-}
-hr {
-	width: 50%;
-  border-top: 1px double #ffeecc !important;
-  margin-bottom:30px !important; 
-  margin-top:0px !important;
-  text-align: center;
-}
-
-th, td {
-	text-align: center;
-}
-
-/* ---------- Classes ---------- */
-
-/*
-.main {
-    background-image: url("https://aurelie-bayre.com/wildcircuspics/bubblybg.jpg");
-    background-color: #ffeecc;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-*/
-
-.aboutSelectors {
-	font-size: 1.2em;
-	text-align: center;
-	cursor: pointer;
-	margin-bottom: 0;
-}
-
-.aboutSelectors span:hover {
-	text-decoration: underline #ffeecc;
-}
-
-.animateAbout {
-	
-	text-align: center;
-}
-
-.caption {
-	font-size: 1.5em;
-}
-
-.title {
-		font-family: 'Amatic SC', cursive;
-    text-align: center;
-    margin-top: 2%;
-}
-
-.titledark {
-    color: #2e5d94;
-    text-shadow: 2px 2px 2px #3b6397;
-    margin-bottom: 1%;
-}
-.titlelight {
-    color: #ffeecc;
-    text-shadow: 2px 2px 2px #f1e4be;
-    margin-bottom: 1%;
-}
-.lateralHeading {
-    background:;
-    font-size: small;
-}
-.lead {
-    font-family: 'Courgette', cursive;
-}
-.jumbotron { 
-    /*margin: 0 0 0 0;*/
-		background-color: #000000;
-    margin-bottom: 0px !important; /* had to override bootstrap default magin bottom for jumbotron. (it was fine on local files, but a white margin was displayed on codepen*/
-		padding: 0px;
-}
-
-.parallax {
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallaxSection {
-    background-image: url("https://aurelie-bayre.com/wildcircuspics/wildcircus.jpg");
-}
-
-.parallaxSection2 {
-    background-image: url("https://aurelie-bayre.com/wildcircuspics/bubblybg.jpg");
-    color: rgb(36, 92, 145);
-}
-
-.parallaxSection3 {
-    background-image: url("https://aurelie-bayre.com/wildcircuspics/bambi.jpg");
-    color: #ffeecc;
-	position : relative;
-}
-.parallaxSection4 {
-    background-image: url("https://aurelie-bayre.com/wildcircuspics/parade.jpg");
-}
-
-.perfImages {
-width: 90%;
-max-width: 70%;
-border-radius: 12px;
-margin-left: 2%;
-}
-
-
-.slogan2 {
-    display: block;
-    font-family: 'Courgette', cursive;
-    font-size: 1.1em;
-		text-align: center;
-}
-
-.table {
-    color: #2e5d94;
-}
-.form-text {
-    color: rgb(212, 212, 212);
-		
-}
-
-
-/* ---------- ID ---------- */
-#about {
-	position: relative;
-}
-#aboutContainer { /* not really what I want!! */
-	width: 70%;
-	height: 60%;
-}
-
-#aboutConclusion {
-	position: absolute;
-	margin-top: 20%;
-}  
-
-#aboutIntro {
-	text-align: center;
-	font-style: italic;
-}
-
-#announcement {
-	font-size: 2em;
-	text-align: center;
-}
-
-#slogan {
-    margin-top: 0;
-    padding-bottom: 50%;
-    text-align: center;
-    color: #ffeecc;
-}
-#performances {
-    display: table;
-    margin-top: 1%;
-}
-
-#performances li {
-    display: table-cell;
-    width: 30%;
-    padding: 0 1% 0 1%;  
-}
-
-
-#about {
-    padding:0  10% 0 10%;
-}
-
-
-#contactbtn {
-    margin-left: 20%;
-    box-shadow: 2px 4px 0 0 #3b6397;
-}
-#contactbtn:active, #contactbtn.active {
-	background: #33a6cc;
-	box-shadow: none;
-	margin-bottom: -4px;
-	margin-top: 4px;
-}
-
-/*   ------Responsive font-sizes----- */
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 10px;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 20px;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 28px;
-  }
+@media (min-width: 1280px) {
+	html {
+		font-size: 20px;
+	}
+	.caption {
+		font-size: 1em;
+	}
 }

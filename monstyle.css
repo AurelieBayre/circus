@@ -335,11 +335,11 @@ footer a:hover {
 		font-size: 10px;
 	}
 	.caption {
-		font-size: 1.4em;
+		font-size: 1.2em;
 	}
 }
 
-@media (min-width: 800px) and (max-width: 1024px) {
+@media (min-width: 800px) and (max-width: 1366px) {
 	html {
 		font-size: 14px;
 	}
@@ -356,11 +356,20 @@ footer a:hover {
 	}
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
 	html {
 		font-size: 20px;
+	}
+	
+	#performances {
+		margin-top: 4%;
 	}
 	.caption {
 		font-size: 1em;
 	}
+	
+	.table {
+		margin-top: 3%;
+	}
 }
+
